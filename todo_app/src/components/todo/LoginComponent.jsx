@@ -48,6 +48,7 @@ class LoginComponent extends Component {
 
     loginClicked() {
         //in28minutes, dummy
+<<<<<<< HEAD
         //if(this.state.username === 'in28minutes' && this.state.password === 'dummy'){
             // console.log('Successful');
             //AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.password )
@@ -75,6 +76,19 @@ class LoginComponent extends Component {
             }
 
         )
+=======
+        if(this.state.username === 'in28minutes' && this.state.password === 'dummy'){
+            // console.log('Successful');
+            AuthenticationService.registerSuccessfulLogin(this.state.username, this.state.password )
+            this.props.history.push(`/welcome/${this.state.username}`)
+            // this.setState({showSuccessMessage: true})
+            // this.setState({hasLoginFailed: false})
+        } else {
+            // console.log('Failed');
+            this.setState({showSuccessMessage: false})
+            this.setState({hasLoginFailed: true})
+        }
+>>>>>>> e402014a7f83c6e1b26bd00d385e20e01b299832
     }
 
     render() {
