@@ -67,7 +67,7 @@ class WelcomeComponent extends Component {
         if(error.message)
             errorMessage += error.message
 
-        if(error.response && error.response.data) {
+        if(error.message && error.response.data) {
             errorMessage += error.response.data.message
         }
 
