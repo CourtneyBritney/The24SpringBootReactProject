@@ -22,3 +22,17 @@ public class UserDAOService {
 		return user.getId();
 	}
 }
+
+
+/*
+public class SomeEntityDAOService {
+	
+	@PersistenceContext
+	private EntityManager entityManager;
+	
+	public long insert(SomeEntity entity) {
+		entityManager.persist(entity);
+		return entity.getId();
+	}
+}
+*/
